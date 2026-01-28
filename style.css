@@ -1,0 +1,142 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content and Sidebar */
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Cinema Screen Styling using Trapezoid  */
+.screen-container {
+    perspective: 500px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Seat Grid Layout [cite: 68] */
+.seat-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row-label {
+    margin-right: 15px;
+    font-weight: bold;
+    width: 20px;
+}
+
+/* Seat Logic and States  */
+input[type="checkbox"] {
+    display: none; /* Hide the actual checkbox */
+}
+
+.seat {
+    background-color: transparent;
+    border: 2px solid #fff; /* Available: White/Hollow [cite: 70] */
+    height: 25px;
+    width: 30px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.seat:hover {
+    transform: scale(1.2);
+    border-color: #2ecc71;
+}
+
+/* Selected State: Green/Filled [cite: 72] */
+input[type="checkbox"]:checked + .seat {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+/* Booked State: Grey/Blocked [cite: 71] */
+.seat.booked {
+    background-color: #444;
+    border-color: #444;
+    cursor: not-allowed;
+}
+
+/* Legend Styling */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    background: #252525;
+    border-radius: 8px;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+}
+
+.legend .selected-demo {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+/* Sidebar / Ticket Summary Styling  */
+.sidebar {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #f1c40f;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    color: #f1c40f;
+}
+
+.sidebar p {
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d4ac0d;
+}

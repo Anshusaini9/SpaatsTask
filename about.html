@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Booking</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CINEMA LOGO</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="second">About</h2>
+
+    <!-- TOP BAR -->
+<div class="top-bar">
+    <div class="logo">🎬 Cinema</div>
+
+    <div class="dashboard">
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Button -->
+        <label for="menu-toggle" class="dash-btn">☰ Menu</label>
+
+        <!-- Dropdown Menu -->
+        <div class="dash-menu">
+            <a href="profile.html">👤 Profile</a>
+            <a href="bookings.html">🎟 My Bookings</a>
+            <a href="settings.html">⚙ Settings</a>
+            <a href="logout.html">🚪 Logout</a>
+        </div>
+    </div>
+</div>
+
+<a href="profile.html"></a>
+<a href="bookings.html"></a>
+<a href="settings.html"></a>
+<a href="logout.html"></a>
+
+    <section id="landing-page">
+        <div class="hero">
+            <h1>NOW SHOWING: MOVIE TITLE</h1>
+            <button class="btn-book" onclick="showBooking()">BOOK NOW</button>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card" onclick="showBooking()">
+                <div class="poster-placeholder">MOVIE 1</div>
+                <h3>Interesteller</h3>
+                    <img src="https://m.media-amazon.com/images/I/51ARQNFp7BL._AC_UF894,1000_QL80_.jpg" alt="" height="400px">
+                    <a href="booking1.html" class="btn">Book Now</a>
+            </div>
+            <div class="movie-card" onclick="showBooking()">
+                <div class="poster-placeholder">MOVIE 2</div>
+                <h3>Stranger Things</h3>
+                    <img src="https://m.media-amazon.com/images/I/81U0-cRG34S._AC_UF894,1000_QL80_.jpg" alt="" height="400px">
+                    <a href="booking2.html" class="btn">Book Now</a>
+            </div>
+            <div class="movie-card" onclick="showBooking()">
+                <div class="poster-placeholder">MOVIE 3</div>
+                 <h3>K.G.F</h3>
+                    <img src="https://images.justwatch.com/poster/274902208/s718/k-g-f-chapter-2.jpg" alt="" height="400px">
+                    <a href="booking3.html" class="btn">Book Now</a>
+            </div>
+            <div class="movie-card" onclick="showBooking()">
+                <div class="poster-placeholder">MOVIE 4</div>
+                <h3>Inseption</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" alt="" height="400px">
+                <a href="booking4.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers">
+        <h2>OFFERS</h2>
+        <p>special discount!</p>
+        <div class="offer-detail">
+            
+            <img src="https://in.bmscdn.com/offers/tncbanner/hsbc-credit-card-offer---live-events-hsbclive24.jpg?16122025175637" alt="" height="400px"; width="600px">
+            <img src="https://in.bmscdn.com/offers/tncbanner/reliance-sbi-card-prime-sbiril1123.jpg?04112025194900" alt="" height="400px"; width="600px">
+
+            </div>
+
+   
+    <footer class="footer">
+        <p><a href="#">About</a> | <a href="#">FAQ</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+</head>
+<body>
+
+<h2>Settings</h2>
+
+
+<h2>Location</h2>
+<p>Kharagpur, West Bengal</p>
+
+<h3>Feedback</h3>
+<!-- <textarea rows="4" cols="40"> </textarea><br><br> -->
+
+
+<section id="feedback-section" class="feedback-container">
+    <div class="section-header">
+        <h2>AUDIENCE REVIEWS</h2>
+        <div class="rating-overview">
+            <span class="avg-rating">4.8</span>
+            <span class="stars">★★★★★</span>
+            <p>Based on 1,200+ reviews</p>
+        </div>
+    </div>
+
+    <div class="reviews-grid" id="reviewsGrid">
+        <div class="review-card">
+            <div class="user-info">
+                <div class="avatar">JD</div>
+                <div>
+                    <h4>John Doe</h4>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <p class="review-text">"Amazing experience! The sound quality was top-notch and the booking process was seamless."</p>
+            <span class="review-date">January 25, 2026</span>
+        </div>
+        
+        </div>
+
+    <div class="add-review">
+        <h3>Share Your Feedback</h3>
+        <form id="feedbackForm">
+            <input type="text" id="reviewerName" placeholder="Your Name" required>
+            <div class="star-rating">
+                <select id="reviewerRating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+            <textarea id="reviewerText" placeholder="Write your review here..." required></textarea>
+            <button type="submit" class="submit-btn">POST REVIEW</button>
+        </form>
+    </div>
+</section>
+
+
+
+</body>
+</html>
